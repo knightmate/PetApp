@@ -7,8 +7,7 @@ Welcome to the PetApp project! This is a web application built using React and t
 - Search for adoptable pets by location, type, breed, and more.
 - View detailed profiles of pets, including images and descriptions.
 - Save your favorite pets to your profile.
-- Contact shelters and rescue organizations for adoption inquiries.
-- Easy-to-use and responsive user interface.
+ .
 
 ## Installation
 
