@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import fetchPet from "./FetchPets";
+import ErrorBoundary from "./ErrorBoundary";
 
 const Details = () => {
  
@@ -9,7 +10,9 @@ const Details = () => {
     queryKey: ['details',id],
     queryFn: fetchPet
   })
- 
+   
+     console.log(pets);
+  
   if (isPending || !data) {
     return (
       <div className="loading-pane">
@@ -34,4 +37,11 @@ const Details = () => {
   );
 };
 
-export default Details;
+function DetailsErrorBoundary(){
+  return(
+    <ErrorBoundary>
+      <Details/>
+    </ErrorBoundary>
+  )
+}
+export default DetailsErrorBoundary;
