@@ -1,14 +1,12 @@
-import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Details from "./Details";
 import SearchParams from "./SearchParams";
-import HomePageBanner from "../pages/HomepageBanner";
+import React from "react";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-      
         <header>
           <Link to="/">Adopt Me!</Link>
         </header>

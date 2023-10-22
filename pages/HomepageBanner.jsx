@@ -1,6 +1,6 @@
 import React from 'react';
-import catImage from '../catanddog.png'; // Adjust the path as needed
-
+import catImage from '../catanddog.png';
+ 
 function HomePageBanner() {
   return (
     <div className="banner">
