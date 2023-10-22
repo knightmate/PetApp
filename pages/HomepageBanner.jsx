@@ -9,7 +9,7 @@ function HomePageBanner() {
         <p>Discover the world of pets and find your new best friend.</p>
       </div>
       <div className="image">
-        <img src={catImage} alt="Banner Image" />
+        <img src={catImage} alt="Banner" />
       </div>
     </div>
   );
