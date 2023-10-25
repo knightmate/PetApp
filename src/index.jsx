@@ -4,7 +4,6 @@ import React,{useState} from "react";
 import {
   QueryClient,
   QueryClientProvider,
-  useQuery,
 } from '@tanstack/react-query'
 import Details from "./Details";
 import SearchParams from "./SearchParams";

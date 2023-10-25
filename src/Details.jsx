@@ -15,13 +15,7 @@ const Details = () => {
   // eslint-disable-next-line no-unused-vars
   const [_, setAdoptedPet] = useContext(AdoptedPetContext);
 
-  if (results.isLoading) {
-    return (
-      <div className="loading-pane">
-        <h2 className="loader">🌀</h2>
-      </div>
-    );
-  }
+ 
 
   const pet = results.data.pets[0];
 
