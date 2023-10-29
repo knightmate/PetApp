@@ -1,11 +1,13 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { useContext, useState } from "react";
+import { useContext, useState ,lazy} from "react";
 import AdoptedPetContext from "./AdoptedPetContext";
-import Modal from "./Modal";
-import ErrorBoundary from "./ErrorBoundary";
+ import ErrorBoundary from "./ErrorBoundary";
 import fetchPet from "./FetchPets";
 import Carousel from "./Carousel";
+
+
+const Modal=lazy(()=>import('./Modal'));
 
 const Details = () => {
   const { id } = useParams();
@@ -25,6 +27,8 @@ const Details = () => {
 
   const pet = results.data.pets[0];
 
+  console.log("Details Loaded!");
+ 
   return (
     <div className="details">
       <Carousel images={pet.images} />
