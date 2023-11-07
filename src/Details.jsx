@@ -7,8 +7,7 @@ import fetchPet from "./FetchPets";
 import Carousel from "./Carousel";
 
 
-const Modal=lazy(()=>import('./Modal'));
-
+ 
 const Details = () => {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
