@@ -6,7 +6,6 @@ import AdoptedPetContext from "./AdoptedPetContext";
 import fetchPet from "./FetchPets";
 import Carousel from "./Carousel";
 
-
  
 const Details = () => {
   const { id } = useParams();
